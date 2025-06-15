@@ -16,6 +16,7 @@ import {
   Github,
   Star
 } from "lucide-react";
+import { FeatureRequest } from './FeatureRequest';
 
 interface LandingPageProps {
   onGetStarted: () => void;
@@ -320,6 +321,9 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
           </p>
         </div>
       </section>
+
+      {/* Feature Request Section */}
+      <FeatureRequest />
 
       {/* Footer */}
       <footer className="py-12 px-6 bg-muted">
