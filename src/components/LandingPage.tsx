@@ -327,8 +327,7 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
 
       {/* Footer */}
       <footer className="py-12 px-6 bg-muted relative z-10">
-  {/* Gradient background behind footer */}
-  <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-accent/90 blur-3xl opacity-50 -z-10"></div>
+
   
   <div className="max-w-7xl mx-auto text-center relative z-10">
     <div className="flex items-center justify-center gap-3 mb-4">
