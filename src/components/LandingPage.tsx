@@ -3,7 +3,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ThemeToggle } from "@/components/ThemeToggle";
 import { 
   Code2, 
   Zap, 
@@ -91,36 +90,7 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="border-b bg-card/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary/90 to-accent/90 rounded-lg flex items-center justify-center">
-                <Database className="w-6 h-6 text-primary-foreground" />
-              </div>
-              <div>
-                <h1 className="text-xl font-bold text-foreground">
-                  MockAPI Studio
-                </h1>
-                <p className="text-xs text-muted-foreground">
-                  Professional API mocking
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4">
-              <Badge variant="secondary" className="gap-1">
-                <Star className="w-3 h-3" />
-                Free Tool
-              </Badge>
-              <Button onClick={onGetStarted} size="sm">
-                Try Now
-              </Button>
-              <ThemeToggle />
-            </div>
-          </div>
-        </div>
-      </header>
+    
 
       {/* Hero Section */}
       <section className="py-20 px-6">

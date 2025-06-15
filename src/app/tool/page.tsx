@@ -1,21 +1,15 @@
 'use client';
-
 import { useState, useEffect } from 'react';
 import { JsonSchemaForm } from '@/components/JsonSchemaForm';
 import { JsonPreview } from '@/components/JsonPreview';
 import { ExportPanel } from '@/components/ExportPanel';
-import { ThemeToggle } from '@/components/ThemeToggle';
 import { generateMockData } from '@/utils/mockDataGenerator';
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, Database } from "lucide-react";
-import { useRouter } from 'next/navigation';
-import type { ApiDefinition, FieldDefinition } from '@/types/api';
+import type { ApiDefinition } from '@/types/api';
 
 export default function ToolPage() {
-  const router = useRouter();
   const [apiDefinition, setApiDefinition] = useState<ApiDefinition>({
     endpoint: '/api/users',
     method: 'GET',
@@ -28,6 +22,7 @@ export default function ToolPage() {
     count: 5,
   });
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [generatedData, setGeneratedData] = useState<Record<string, any>[]>([]);
 
   const handleGenerateData = () => {
@@ -42,9 +37,6 @@ export default function ToolPage() {
     setGeneratedData(data);
   };
 
-  const handleBackToLanding = () => {
-    router.push('/');
-  };
 
   // Generate initial data
   useEffect(() => {
@@ -54,47 +46,7 @@ export default function ToolPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* App Header */}
-      <div className="border-b bg-card/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-4">
-              <Button
-                onClick={handleBackToLanding}
-                variant="ghost"
-                size="sm"
-                className="gap-2 text-muted-foreground"
-              >
-                <ArrowLeft className="w-4 h-4" />
-                Back to Home
-              </Button>
-              
-              <div className="h-6 w-px bg-border" />
-              
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-                  <Database className="w-5 h-5 text-primary-foreground" />
-                </div>
-                <div>
-                  <h1 className="text-lg font-bold text-foreground">
-                    MockAPI Studio
-                  </h1>
-                  <p className="text-xs text-muted-foreground">
-                    Professional API mocking
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="flex items-center gap-3">
-              <Badge variant="secondary" className="px-3 py-1">
-                Free Tool
-              </Badge>
-              <ThemeToggle />
-            </div>
-          </div>
-        </div>
-      </div>
+
 
       {/* Main App Content */}
       <div className="max-w-6xl mx-auto px-6 py-8">
