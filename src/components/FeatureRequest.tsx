@@ -46,7 +46,7 @@ export function FeatureRequest() {
             Help Shape the Future
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            We're in alpha and your feedback is invaluable. Request features, report bugs, or suggest improvements.
+            We&apos;re in alpha and your feedback is invaluable. Request features, report bugs, or suggest improvements.
           </p>
         </div>
 
@@ -54,7 +54,7 @@ export function FeatureRequest() {
           <CardHeader>
             <CardTitle className="text-2xl">Request a Feature</CardTitle>
             <CardDescription>
-              Tell us what you'd like to see in MockAPI Studio. Your suggestions help us build a better tool.
+              Tell us what you&apos;d like to see in MockAPI Studio. Your suggestions help us build a better tool.
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -146,7 +146,7 @@ export function FeatureRequest() {
           </div>
           <div className="p-4 rounded-lg bg-card/50 backdrop-blur-sm border border-border">
             <h3 className="font-medium text-foreground mb-2">Stay Updated</h3>
-            <p>We'll notify you when your requested feature is implemented.</p>
+            <p>We&apos;ll notify you when your requested feature is implemented.</p>
           </div>
         </div>
       </div>
