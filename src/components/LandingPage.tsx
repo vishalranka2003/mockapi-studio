@@ -115,7 +115,7 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
           
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
             Design, generate, and export professional mock API responses for development, testing, and prototyping. 
-            No backend required. No signup needed. Just pure productivity.
+            No backend required. Just pure productivity.
           </p>
           
           <div className="flex items-center justify-center gap-4 mb-12">
@@ -127,7 +127,7 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
               Start Building APIs
               <ArrowRight className="w-5 h-5" />
             </Button>
-            <Button variant="outline" size="lg" className="gap-2 text-lg px-8 py-6">
+            <Button onClick={() => window.open('https://github.com/mockapi-studio/mockapi-studio', '_blank')} variant="outline" size="lg" className="gap-2 text-lg px-8 py-6">
               <Github className="w-5 h-5" />
               View on GitHub
             </Button>
@@ -316,7 +316,7 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
           </Button>
           
           <p className="text-primary-foreground/80 text-sm mt-4">
-            No signup required • Free forever • No credit card needed
+          Hassle Free Signup • Free forever • No credit card needed
           </p>
         </div>
       </section>
