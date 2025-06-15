@@ -102,7 +102,7 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
             </div>
             <Badge
               variant="outline"
-              className="relative z-10 px-4 py-2 text-sm bg-primary/30 border border-primary/40 backdrop-blur-lg shadow-sm"
+              className="rounded-full relative z-10 px-4 py-2 text-sm bg-primary/30 border border-primary/40 backdrop-blur-lg shadow-sm"
             >
               🚀 Used by 10,000+ developers worldwide
             </Badge>
@@ -326,26 +326,29 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
       <FeatureRequest />
 
       {/* Footer */}
-      <footer className="py-12 px-6 bg-muted">
-        <div className="max-w-7xl mx-auto text-center">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="w-8 h-8 bg-gradient-to-br from-primary/90 to-accent/90 rounded-lg flex items-center justify-center">
-              <Database className="w-5 h-5 text-primary-foreground" />
-            </div>
-            <span className="text-xl font-bold text-foreground">MockAPI Studio</span>
-          </div>
-          <p className="text-muted-foreground mb-6">
-            Professional API mocking for modern developers
-          </p>
-          <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground">
-            <span>© 2025 MockAPI Studio</span>
-            <span>•</span>
-            <span>Open Source</span>
-            <span>•</span>
-            <span>MIT License</span>
-          </div>
-        </div>
-      </footer>
+      <footer className="py-12 px-6 bg-muted relative z-10">
+  {/* Gradient background behind footer */}
+  <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-accent/90 blur-3xl opacity-50 -z-10"></div>
+  
+  <div className="max-w-7xl mx-auto text-center relative z-10">
+    <div className="flex items-center justify-center gap-3 mb-4">
+      <div className="w-8 h-8 bg-gradient-to-br from-primary/90 to-accent/90 rounded-lg flex items-center justify-center">
+        <Database className="w-5 h-5 text-primary-foreground" />
+      </div>
+      <span className="text-xl font-bold text-foreground">MockAPI Studio</span>
+    </div>
+    <p className="text-muted-foreground mb-6">
+      Professional API mocking for modern developers
+    </p>
+    <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground">
+      <span>© 2025 MockAPI Studio</span>
+      <span>•</span>
+      <span>Open Source</span>
+      <span>•</span>
+      <span>MIT License</span>
+    </div>
+  </div>
+</footer>
     </div>
   );
 } 

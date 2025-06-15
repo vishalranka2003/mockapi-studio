@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Navbar } from "@/components/Navbar";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,7 +39,9 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <Navbar />
-            <main>{children}</main>
+            <main>{children}
+            <SpeedInsights />
+            </main>
           </ThemeProvider>
         </ClerkProvider>
       </body>
