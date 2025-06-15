@@ -5,7 +5,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Navbar } from "@/components/Navbar";
 import { SpeedInsights } from '@vercel/speed-insights/next';
-
+import { Analytics } from "@vercel/analytics/next"
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -40,7 +40,8 @@ export default function RootLayout({
           >
             <Navbar />
             <main>{children}
-            <SpeedInsights />
+              <SpeedInsights />
+              <Analytics />
             </main>
           </ThemeProvider>
         </ClerkProvider>
