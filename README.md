@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MockAPI Studio
 
-## Getting Started
+A professional API mocking tool for modern developers. Design, generate, and export mock API responses with ease.
 
-First, run the development server:
+## ✨ Features
+
+- **Visual Schema Builder**: Create complex JSON structures with an intuitive interface
+- **Instant Generation**: Generate realistic mock data instantly
+- **Multiple Export Formats**: JSON, JavaScript, TypeScript, cURL, Postman
+- **Rich Data Types**: Support for strings, numbers, emails, URLs, dates, UUIDs, arrays, and nested objects
+- **API-Ready Output**: Generate production-ready API responses
+- **Privacy-Focused**: Everything happens in your browser
+- **Dark Mode**: Beautiful dark theme support
+- **Modern UI**: Built with Next.js, TypeScript, and Tailwind CSS
+
+## 🚀 Getting Started
 
 ```bash
+# Clone the repository
+git clone https://github.com/yourusername/mockapi-studio.git
+
+# Navigate to the project directory
+cd mockapi-studio
+
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Components**: shadcn/ui
+- **Icons**: lucide-react
+- **Theme**: next-themes
 
-## Learn More
+## 📝 License
 
-To learn more about Next.js, take a look at the following resources:
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🤝 Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Deploy on Vercel
+## 🌟 Support
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If you find this project helpful, please give it a star on GitHub!
