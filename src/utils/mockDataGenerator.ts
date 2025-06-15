@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import type { FieldDefinition, ApiDefinition } from '@/types/api';
 
 // Mock data generators for different types
@@ -88,7 +89,7 @@ function generateSingleFieldValue(field: FieldDefinition): any {
 export function generateMockData(apiDefinition: ApiDefinition): any[] {
   const { fields, count } = apiDefinition;
   
-  return Array.from({ length: count }, (_, index) => {
+  return Array.from({ length: count }, () => {
     const item: Record<string, any> = {};
     
     fields.forEach(field => {
