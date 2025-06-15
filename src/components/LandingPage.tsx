@@ -334,7 +334,7 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
             Professional API mocking for modern developers
           </p>
           <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground">
-            <span>© 2024 MockAPI Studio</span>
+            <span>© 2025 MockAPI Studio</span>
             <span>•</span>
             <span>Open Source</span>
             <span>•</span>
